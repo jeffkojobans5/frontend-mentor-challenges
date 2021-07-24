@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />	
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet"> 
+	<title>SINGLE PRICE GRID</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap');
+
+		body {
+			background-color: #e5eff5;
+			font-family: 'Karla' , sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+    		min-height: calc(100vh - 10px);		
+    		margin: 0 auto;	
+
+		}	
+		.container {
+			background-color: #ffffff;
+			box-shadow: 0px 0px 100px whitesmoke;
+			border-radius: 10px;
+			margin: 0 auto;
+			width: 800px;
+			max-width: 100%;
+			overflow: hidden;
+			margin: 20px;
+			box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);			
+			
+		}
+		.top {
+			padding: 3%;
+		}
+
+		.top p {
+			line-height: 1.5em;
+			font-size: 1.3em;
+		}
+		.left {
+			background: #2ab2af;
+			flex: 1;
+			padding: 3%;
+		}
+		.right {
+			background: #4bbebc;
+			flex: 1;
+			padding: 3%;
+
+		}
+		.container-flex {
+			display: flex;
+			/*background: blue;	*/
+			justify-content: center;
+			/*align-items: flex-start;*/
+			flex-wrap: wrap;
+		}
+
+		h1 {
+			color: #2ab2b6;
+		}
+		h2 {
+			color: #c5df34;
+		}
+		p {
+			color: #999999;
+		}
+		.left p {
+			color: white;
+		}
+
+
+		.right p , .left p{
+			color: #c9ebeb;
+		}
+
+		.right h2 , .left h2 {
+			color: white;
+		}
+
+		.price {
+			font-size: 60px;
+			font-weight: 400;
+		}
+		button {
+			padding: 3%;
+			background: #c0df34;
+			border: 0;
+			font-family: 'Karla' ,sans-serif;
+			width: 100%;
+			padding: 5%;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+			color: white;
+			font-size: 20px;
+			margin-top: 20px;
+			border-radius: 5px;
+		}
+		.little {
+			color: #c9ebeb;
+			font-size: 16px;
+			position: relative;
+			top: -15px;
+		}
+		@media only screen and (max-width: 600px){
+			.container-flex {
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="top">
+			<h1>Join our community</h1>
+			<h2><span>30-day, hassle-free money back guarantee</span></h2>
+			<p>Gain access to our full library of tutorials along with expert code reviews.<br/>
+			Perfect for any developers who are serious about honing their skills.</p>
+		</div>	
+		<div class="container-flex">
+		<div class="left">
+					<h2>Monthly Subscription</h2>
+					<h2> <span class="price">$29</span> <span class="little"> per month </span> </h2>
+					<p>Full access for less than $1 a day </p>
+					<button>Sign Up</button>
+		</div>	
+		<div class="right">
+				<h2>Why Us</h2>
+			    <p>Tutorials by industry experts</p>
+			    <p>Peer & expert code review</p>
+			    <p>Coding exercises</p>
+			    <p>Access to our GitHub repos</p>
+			    <p>Community forum</p>
+			    <p>Flashcard decks</p>
+			    <p>New videos every week</p>
+			    </div>
+		</div>
+	</div>
+
+
+</body>
+</html>

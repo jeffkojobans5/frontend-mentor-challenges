@@ -1,0 +1,82 @@
+	@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');		
+		* {	
+			box-sizing: border-box;
+		}
+
+		body {
+    		font-family: 'Poppins', sans-serif;	
+    		background-color: 	#fafafa;	
+    		min-height: 100vh;
+    		margin: 0 auto;
+    		display: flex;
+    		justify-content: center;
+			align-items: center;
+		}
+		.cards-container {
+			background: ;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			max-width: 1200px;
+			width: 100%;
+			margin: 0 auto;
+			margin-top: 1%;
+			margin-bottom: 2%;
+			padding: 1%;
+			border-radius: 10px;
+		}	
+
+		.cards {
+			border-radius: 5px;
+			margin: 10px;
+			padding: 15px;
+			width: 350px; 
+			background: white;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1)
+		}
+
+		p {
+			color: hsl(229, 6%, 66%);
+		}
+
+		.cards img {
+			height: 40px;
+			float: right;
+		}
+
+		.push-up {
+			transform: translateY(50%);
+		}
+		.one {
+			border-top:	5px solid #45d3d3;
+		}
+		.two {
+			border-top:	5px solid #ea5353;
+		}
+		.three {
+			border-top:	5px solid #549ef2;
+		}
+		.four {
+			border-top:	5px solid #fcaf4a;
+		}	
+		.container {
+			margin-top: 0.5%;
+		}	
+		.container h1:first-child {
+			font-weight: 	1;
+			margin-bottom: 0px;
+		}				
+		.container > p , .container h1 {
+			text-align: 	center;
+		}
+		h1 span {
+			font-weight: 600;
+		}
+
+		@media only screen and (max-width: 900px){
+		.push-up {
+			transform: translateY(0%);
+			}
+		}
+	

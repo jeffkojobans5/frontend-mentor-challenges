@@ -1,0 +1,247 @@
+
+		* {
+			box-sizing: border-box;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		body {
+			margin: 0 auto;
+			font-family: 'Raleway' , sans-serif;
+		}
+		.container {
+			margin: 0 auto;
+			width: 100%;
+			max-width: 1200px;
+			padding: 2%;
+		}
+		.header {
+			margin-top: 50px;
+		}
+		h1.things {
+			color: 	hsl(243, 87%, 12%);
+			font-weight: bolder;
+			line-height: 	1.3em;
+		}
+		p.things {
+			line-height: 	1.5em;
+			color: 	hsl(243, 87%, 12%);
+		}
+		.left-text , .right-image{
+			flex: 1,
+		}
+		.header , .banner , .inside-slant-border , .inside-early-access , .inside-footer , form{
+			display: flex;
+			justify-content: 	center;
+			align-items: 	center;
+		}
+		.banner {
+			margin-top: 0%;
+		}
+		.logo {
+			flex: 1;
+		}
+		.nav {
+			flex: 1;
+		}
+		.nav a {
+			float: right;
+			color: black;
+			text-decoration: none;
+			margin: 5%;
+		}
+		.box {
+			flex: 	1;
+		}	
+		form input {
+			display: 	inline;
+			height: 	50px;
+			width: 	60%;
+			padding: 	15px;
+			margin: 	0;
+			border: 	1px solid hsl(243,87%,12%)
+		}
+		form button {
+			padding: 	16px;
+			margin: 	0;
+			background: 	#3065f8;
+			border: 	1px solid 	#3065f8;
+			color: 	white;
+			margin-left: 	10px;
+			font-size: 	14px;
+			font-family: 	'Raleway' , sans-serif	;
+			font-weight: 	500;
+			flex: 	1;			
+		}
+		input::placeholder {
+			font-family: 'Raleway' ,sans-serif;
+			font-size: 14px;
+		}
+		.right-image {
+			padding: 	5%;
+		}		
+		.writings-on-right a {
+			color: 	#3da08f;
+		}
+
+		.writings-on-right a::after {
+			content: url(../images/icon-arrow.svg);
+
+		}
+
+		.slant-border {
+			margin-top: 	10%;
+			background-color: 	#f6f6fe;
+			padding-bottom: 	7%;
+			position: relative;
+		}
+
+		.slant-border::before {
+			content: '';
+			background-image: url(../'images/bg-curve-desktop.svg');
+			background-size: cover;
+			background-position: center center;
+			position: absolute;
+			top: -60px;
+			left: 0;
+			height: 60px;
+			width: 100%;
+		}				
+		.image-on-right {
+			padding: 	5%;
+		}
+		.inside-slant-border {
+			justify-content: 	center;
+			align-items: 	center;
+		}		
+		.testimonial {
+			background-color: 	white;
+			box-shadow: 	0px 0px 10px rgba(0, 0, 0, 0.1);;
+			padding: 	10%;
+			border-radius: 	15px;
+			margin-top: 	10%;
+		}
+		#testi-img {
+			border-radius: 	100%;
+			height: 	40px;
+			float: 	left;
+			margin-right: 	5%;
+		}
+		.left-writings {
+			flex: 	1;
+			padding-right: 	5%;
+			padding-top: 	5%;
+			padding-bottom: 	5%;
+		}
+		.right-input {
+			flex: 	1;
+		}
+		.early-access {
+			padding: 	10px 1px;
+			color: 	white;
+			/*margin-top: 	10%;*/
+			background: 	#585989;
+		}
+		.inside-early-access p , .inside-early-access h1  {
+			color: 	white;
+		}
+		.right-input button {
+			padding: 	16px;
+			margin: 	0;
+			background: 	#3065f8;
+			border: 	1px solid 	#3065f8;
+			color: 	white;
+			margin-left: 	0px;
+			font-size: 	14px;
+			font-family: 	'Raleway' , sans-serif	;
+			font-weight: 	500;
+			display: 	block;
+			width: 	50%;
+		}	
+		.right-input input {
+			height: 	50px;
+			width: 	100%;
+			padding: 	15px;
+			margin: 	0;
+			border: 	0px;
+		}			
+		span {
+			font-weight: 	600;
+			font-size: 	20px;
+		}
+		.inside-footer {
+			align-items: 	flex-start;
+			padding-top: 	30px;
+			color: 	white;	
+		}
+		footer {
+			background-color: 	#070439;
+			padding: 	50px 50px
+		}
+		.box a {
+			margin: 	0;
+			padding: 	0;
+			color: white;
+			margin-left: 5px;
+			margin-top: 915px;
+			font-size: 20px;
+			color: #3065f8;
+		}
+		.social {
+			margin-top: 10px;
+		}
+
+		@media only screen and (max-width: 765px) {
+		.header , .banner , .inside-slant-border , .inside-early-access , .inside-footer {
+			flex-direction: column;			
+		}
+		.container {
+			padding: 5%;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+		p , h1 {
+			text-align: center;
+		}
+		a {
+			text-align: center;
+		}
+		.nav {
+			margin-top: 5%;
+			margin-bottom: 5%;
+			width: 100%;
+			text-align: center;
+		}
+		.nav a {
+			float: none;
+		}
+		.right-input button {
+			width: 100%;
+			display: block;
+			margin-bottom: 8%;
+		}
+		.inside-footer {
+			justify-content: center;
+			align-items: center;
+		}
+		#testi-img {
+			margin-right: 	0%;
+		}		
+		.right-input {
+			width: 100%;
+		}
+		#icon-living {
+			float: right;
+		}
+		#footer-img {
+			display: block;
+			margin: 0 auto;
+		}
+		#center {
+			text-align: center;
+			display: block;
+		}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yoko Kitchen</title>
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		background-image: url('images/dark-wood.jpg');
+		font-family: Georgia, Times, serif;
+	}
+	.container {
+		max-width: 100%;
+		width: 950px;
+		margin: 0 auto;
+		margin-top: 25px;
+		background: white;
+	}
+	.banner {
+		height: 120px;
+		background: green	;
+		background-image: url('images/header.jpg');
+	}
+	.navbar {
+		background: #aeaca8;
+	}
+	#current {
+		color: black;
+	}
+	.navbar ul {
+		margin: 0;
+		height: 40px;
+		padding-top: 8px;
+		padding-bottom: 3px;
+
+	}
+	.navbar ul li {
+		text-decoration: none;
+		display: inline;
+		margin-right: 30px;
+	}
+	.navbar ul li a{
+		text-decoration: none;
+		color: #ffffff;
+	}
+	.navbar ul li a:hover {
+		color: black;
+	}
+	.main {
+		display: flex;
+	}
+	.inside-main {
+		display: flex;
+	}
+	.writing {
+		flex: 3;
+	}
+	.wrote {
+		display: flex;
+		background: #ffffff;
+	}
+	.side {
+		flex:1.3;
+		border-left: 1px solid #eeeeee;
+	}
+	figure {
+		border: 1px solid #eeeeee;
+		padding: 2%;	
+	}
+	figcaption	{
+		color: #666666;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	.main-picture {
+		flex:	1;
+		justify-content:center;		
+	}
+	.main-content {
+		flex: 1;
+		margin-left: -35px;
+		padding: 15px;
+	}
+	.main-content p:first-child {
+		color: #666666;
+		font-size: 1.5rem;
+	}
+	.main-content p {
+		color: #666666;
+	}
+	.side h1 {
+		color: #666666;
+		font-size: 1.5rem;
+	}
+	.popular-recipes {
+		border-right: 1px solid #666666;
+		padding: 15px;
+	}
+	.popular-recipes p:first-child , .contact p:first-child{
+		color: #e16581;
+		font-size: 1.5rem;
+	}
+	.popular-recipes p{
+		margin-bottom: 10px;
+	}
+	.contact p{
+		margin-top: 20px;
+	}
+	.popular-recipes a {
+		display: block;	
+		padding: 15px;	
+		border-bottom: 1px solid #eeeeee ;
+		text-decoration: none;	
+		color: #e16581 
+	}
+	.popular-recipes a:hover {
+		background: #efefef;
+		color: #985d6a;
+
+	}	
+	span{
+		color: #e16581;
+		font-size: 1.2rem;
+	}
+	.contact {
+		padding-left: 20px;
+		padding-right: 20px;
+		color: #666666;
+	}
+	.footer {
+		margin: 0;
+		max-width: 100%;
+		width: 980px;
+		background: #aeaca8;
+	}
+	#height {
+		line-height: 1.5rem;
+	}
+	#nav-mage {
+			display: none;
+	}	
+	 @media screen and (max-width: 600px) {
+	 	body {
+	 		margin: 0 auto;
+	 	}
+	 	.wrote , .inside-main {
+	 		flex-direction: column;
+	 	}
+		.navbar ul {
+			height: 100%;
+		}
+		.main-content {
+		margin-left: 0px;
+		}
+		#nav-mage {
+			position: relative;
+			top: 0px;
+			right: 	0px;
+			display: block;
+			text-align:	right;	
+			margin: 	0;
+			}
+		ul {
+			display: none;
+		}
+		ul li a{
+			display: block;
+			text-align: center;
+		}
+
+		@keyframes done {
+			to {
+				transform: translateX(0%);
+			}
+		}
+		#navMage {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			display: none;
+			background-color: red;
+			transform: translateY(-110%);
+		}
+
+		#navMage ul li {
+			color: green
+		}
+	 }
+</style>
+</head>
+<body>
+	
+
+
+
+	<div class="container">
+		<div class="banner">
+
+		</div>
+<!-- start of navbar -->
+		<div class="navbar"> 
+			<p id="nav-mage"><img src="img-r.png"></p>
+			<ul id="navMage">
+				<li><a href="#" id="current"> home </a></li>
+				<li><a href="#"> classes </a></li>
+				<li><a href="#"> catering </a></li>
+				<li><a href="#"> about </a></li>
+				<li><a href="#"> contact </a></li>
+			</ul>
+		</div>
+		<!-- end of navbar -->
+	<div class="content">
+		<div class="main">
+		  <div class="inside-main">
+		  	<div class="writing">
+				<div class="wrote">
+				<div class="main-picture">
+				<figure>
+					<img src="images/bok-choi.jpg">
+					<figcaption>Bok Choi</figcaption>
+				</figure>
+			</div>
+			<div class="main-content">
+				<p>Japanese Vegetarian <br/><span>Five week course in London</span></p>
+				<p id="height">A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
+				</div>
+			</div>
+			<div class="wrote">
+				<div class="main-picture">
+				<figure>
+					<img src="images/teriyaki.jpg">
+					<figcaption>Teriyaki Sauce</figcaption>
+				</figure>
+			</div>
+			<div class="main-content">
+				<p>Sauces Masterclass <br/><span>One day workshop</span></p>
+				<p id="height">An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+			</div>
+			</div>
+		</div>
+		<div class="side">
+			<div class="popular-recipes">
+				<p>Popular Recipes</p>
+					<a href=""> Yakitori (grilled chicken) </a>
+					<a href=""> Tsukune (minced chicken patties) </a>
+					<a href=""> Okonomiyaki (savory pancakes) </a>
+					<a href=""> Mizutaki (chicken stew) </a>
+			</div>
+			<div class="contact">
+				<p>Contact</p>				
+				<p id="height">Yoko's Kitchen
+					<br/>27 Redchurch Street
+					<br/>Shoreditch
+					<br/>London E2 7DP
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+		<div class="footer">
+				<p style="margin: 0 ; padding-left: 20px; color: white ; padding-top: 5px; padding-bottom: 5px; ">&#169 2011 Yoko's Kitchen</p> 
+		</div>
+
+			<script>
+		let image = document.getElementById('nav-mage');
+
+		function change () {
+			if (image.innerHTML == '<img src="img-r.png">'){
+				image.innerHTML = '<img src="img.png">';
+				navMage.style.display = 'block';
+				navMage.style.animation = 'done .4s ease forwards' 
+			}	else {
+				image.innerHTML = '<img src="img-r.png">';
+				navMage.style.display = 'none';
+			}
+		}
+		image.addEventListener('click' , change , 'false');
+		console.log(image.innerHTML)
+	</script>
+</body>
+</html>

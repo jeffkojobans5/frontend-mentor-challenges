@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />	
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet"> 
+	<title>SIGN UP FORM</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+		* {
+			box-sizing: border-box;
+		}		
+		body {
+			margin: 0;
+			font-family: 'Poppins' , sans-serif;
+			background: #ff7a7a;
+			background-image: url('images/bg-intro-desktop.png');
+		}
+		.container {
+			padding: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			max-width: 1000px;
+			width: 100%;
+			margin: 0 auto;
+			/*background: gray;*/
+			height: 100vh;
+		}
+		.left {
+			/*background: green;*/
+			flex: 1;
+			padding: 1%;
+		}
+		.right {
+			background: ;
+			flex: 1;
+		}
+
+		input {
+			display: block;
+			width: 100%;
+			border: 1px solid #b9b6d3;
+			height: 50px;
+			padding: 20px;
+			border-radius: 5px;
+			/*margin-top: 1%;*/
+		}
+
+		input::placeholder {
+			color: gray;
+			font-weight: 500;
+			font-size: 15px;
+			font-family: 'Poppins' , sans-serif;
+		}
+
+		input:focus {
+			outline: none;
+		}
+
+		button {
+			display: block;
+			width: 100%;
+			text-align: center;
+			background: #38cc8c;			
+			padding: 3%;
+			font-size: 15px;
+			font-family: 'Poppins' ,sans-serif;
+			text-transform: uppercase;
+			border-radius: 5px;
+			border: 0;
+			color: white;
+			letter-spacing: 0.15em;
+			box-shadow: 0 5px #2fb67c;		
+		}
+
+		h1 {
+			font-size: 2.5em;
+			color: white;
+			line-height: 1.2em;
+		}
+		.right p:first-child {
+			text-align: center;
+			background: #6055a5;			
+			padding: 3%;
+			border-radius: 5px;
+			color: #dfc7cf;
+			box-shadow: 0 5px #cc6262;
+		} 
+		span {
+			color: #f1f1f1;
+			font-weight: 500;
+		}
+
+		form {
+			padding: 5%;
+			background: #ffffff;
+			border-radius: 5px;
+			box-shadow: 0px 5px #c36b6c;
+		}
+
+		img {
+			float: right;
+			position: relative;
+			top: -37px;
+			right: 10px;
+			height: 20px;
+			visibility: hidden;
+			
+		}
+		small {
+			display: relative;
+			top:  -100px;
+			left: 0;
+			display: block;
+			text-align: right;
+			color: hsl(0, 100%, 74%);
+			font-size: 12px;			
+			padding-top: 1%;
+			padding-bottom: 1%;
+			visibility: hidden;
+			/*background-color: green;*/
+		}
+		p {
+			color: white;
+		}
+
+		#terms {
+			color: gray;
+			margin: 0;
+			font-size: 12px;
+			text-align: center;
+		}
+
+		.last {
+			color: hsl(0, 100%, 74%);
+		}
+
+		@media only screen and (max-width: 600px) {
+			.container {
+				flex-direction: column;
+				margin-bottom: 50px;
+			}
+		} 
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left">
+			<h1>Learn to code by <br/> watching others </h1>
+			<p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+		</div>
+		<div class="right">
+			<p><span>Try it free 7 days </span> then $20/mo. thereafter </p>
+			<form>
+				<input type="text" name="" placeholder="First Name">
+				<img src="images/icon-error.svg"> 
+				<small>First Name is required</small>
+
+				<input type="text" name="" placeholder="Last Name">
+				<img src="images/icon-error.svg">
+				<small>Last Name is required</small>
+
+				<input type="email" name="" placeholder="Email Name">
+				<img src="images/icon-error.svg">
+				<small>Email is required</small>
+
+				<input type="password" name="" placeholder="Password">
+				<img src="images/icon-error.svg">
+				<small>Password is required</small>
+
+				<button> claim your free trial</button>		<br/>
+				<p id="terms">By clicking the button, you are agreeing to our <span class="last">	Terms and Services</span></p>														
+			</form>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
